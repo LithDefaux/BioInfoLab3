@@ -1,5 +1,4 @@
-*.fna
-*.fasta
+.txt
+.fna
+.fasta
 __pycache__/
-dist/
-build/

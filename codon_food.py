@@ -81,14 +81,8 @@ def main():
         description="Extract top 10 codon frequencies from FASTA genome and query LLM for food analysis."
     )
     parser.add_argument("fasta_file", help="Path to input .fasta or .fna file")
-    #parser.add_argument("--api-key", help="Gemini API Key (or set GEMINI_API_KEY environment variable)")
     
     args = parser.parse_args()
-    
-    #api_key = args.api_key or os.environ.get("GEMINI_API_KEY")
-    #if not api_key:
-    #    print("Error: Missing API key. Pass --api-key or set GEMINI_API_KEY in your environment.", file=sys.stderr)
-    #    sys.exit(1)
 
     sequence = read_fasta(args.fasta_file)
     top_codons = get_top_sliding_codons(sequence, top_n=10)

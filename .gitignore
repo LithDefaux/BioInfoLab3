@@ -1,0 +1,5 @@
+*.fna
+*.fasta
+__pycache__/
+dist/
+build/

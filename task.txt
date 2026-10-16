@@ -1,0 +1,6 @@
+Lab 3 Task.
+
+Analyse a specific genome of a virus/bacteria, and extract the frequency of the 
+Design a software app that is able to open a fast up file containing a viral/bacterial genome and that is able to detect the frequencies of that specific genome.
+Show in your output the top 10 highest frequencies for these codons, in order to find the frequencies for all 64 codons, you must use a sliding window of exactly 3
+positions in which you add one to a counter for the current codon.
